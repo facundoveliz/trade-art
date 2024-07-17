@@ -14,7 +14,6 @@ sequelize
 		console.log("Connection has been established successfully.");
 		console.log("All models were synchronized successfully.");
 	})
-	// biome-ignore lint/suspicious/noExplicitAny: <Typescript correction>
-	.catch((err: any) => {
+	.catch((err) => {
 		console.error("Unable to connect to the database:", err);
 	});
